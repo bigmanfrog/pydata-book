@@ -38,6 +38,7 @@ print(path_)
 #sink path
 path_sink = 'C:\\Test_Data\\tmp2.txt'
 print(path_sink)
-#with open(path_sink, mode='w') as sink:
-#    sink.writelines(x for x in open(path_) if len(x) > 1)
+with open(path_sink, mode='w') as sink:
+    sink.writelines(x for x in open(path_) if len(x) > 1)
+    
 
