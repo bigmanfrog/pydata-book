@@ -24,6 +24,8 @@ with open(path_, encoding = 'utf-8') as file_:
 ##so tell() can return different values based off of encoding value
 
 ##default encoding value
+#the default encoding in Python is unicode; other
+#encodings are possible like utf8, binary, ect...
 import sys
 print(sys.getdefaultencoding())
 
@@ -40,5 +42,5 @@ path_sink = 'C:\\Test_Data\\tmp2.txt'
 print(path_sink)
 with open(path_sink, mode='w') as sink:
     sink.writelines(x for x in open(path_) if len(x) > 1)
-    
+
 
